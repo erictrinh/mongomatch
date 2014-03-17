@@ -19,5 +19,13 @@
   },
   "dependencies": {
     "lodash": "^2.4.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erictrinh/mongomatch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/erictrinh/mongomatch/issues"
+  },
+  "homepage": "https://github.com/erictrinh/mongomatch"
 }
