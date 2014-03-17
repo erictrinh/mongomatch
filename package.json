@@ -1,0 +1,23 @@
+{
+  "name": "mongomatch",
+  "version": "0.0.0",
+  "description": "Mongo-like object queries in Javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "mongo",
+    "query",
+    "match"
+  ],
+  "author": "Eric Trinh <et.trinity@gmail.com> (http://erictrinh.com/)",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.9.0",
+    "mocha": "^1.18.0"
+  },
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
+}
