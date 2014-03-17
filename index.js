@@ -23,9 +23,10 @@ module.exports = function mongomatch(query, record) {
 
     // match exact array positions
     if (_.isArray(queryValue)) {
-      return _.every(queryValue, function(val, index) {
-        return record[queryKey][index] === val;
-      });
+      return queryValue.length === record[queryKey].length &&
+        _.every(queryValue, function(val, index) {
+          return record[queryKey][index] === val;
+        });
     }
 
     if (_.isObject(queryValue)) {

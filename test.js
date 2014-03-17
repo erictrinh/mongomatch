@@ -116,12 +116,20 @@ describe('mongomatch', function() {
       a: [1, 2, 3]
     };
 
-    it('should match when array positions match', function() {
+    it('should match when array positions match and array lengths are equal', function() {
+      var match = mongomatch(query, {
+        a: [1, 2, 3]
+      });
+
+      expect(match).to.be.true;
+    });
+
+    it('should match when array positions match and array lengths are not equal', function() {
       var match = mongomatch(query, {
         a: [1, 2, 3, 4]
       });
 
-      expect(match).to.be.true;
+      expect(match).to.be.false;
     });
 
     it('should not match when array positions mismatch', function() {
